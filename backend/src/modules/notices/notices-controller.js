@@ -13,6 +13,7 @@ const {
   processGetNoticeRecipient,
   processGetAllPendingNotices,
 } = require("./notices-service");
+const {fetchClassTeacherDetailById} = require("../class-teacher/class-teacher-service");
 
 const handleFetchNoticeRecipients = asyncHandler(async (req, res) => {
   const noticeRecipients = await fetchNoticeRecipients();
